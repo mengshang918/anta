@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+<link rel="stylesheet" type="text/css" href="style/css/details.css">
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/template.js"></script>
+<script type="text/javascript" src="js/header_footer.js"></script>
+<script type="text/javascript" src="js/details.js"></script>
+<script type="text/javascript" src="js/cookie.js"></script>
+</head>
+<body>
+	<div class="header">
+		<script type="text/javascript">
+			$('.header').load('common/header.php');
+		</script>
+	</div>
+	<div class="right-sidebar">
+		<script type="text/javascript">
+			$('.right-sidebar').load('common/right_sidebar.html');
+		</script>
+	</div>
+
+	<div class="main clearfix">
+		<div class="list_crumb">
+		    <ul class="list_crumb_list">
+		        <li class="classify"><a href="javascript:;">首页</a><i class="crumb_arrow"></i></li>
+		        <li class="classify"><a href="/list/">所有分类</a><i class="crumb_arrow"></i></li>
+		        <li class="classify"><a href="/list/d1" title="鞋">鞋</a><i class="crumb_arrow"></i></li>
+		        <li class="classify"><a href="/list/d5" title="男鞋">男鞋</a><i class="crumb_arrow"></i></li>
+		        <li class="classify"><a href="/list/d10" title="运动鞋类">运动鞋类</a><i class="crumb_arrow"></i></li>
+		        <li class="classify"><a href="/list/d13" title="篮球鞋">篮球鞋</a><i class="crumb_arrow"></i></li>
+		        <li><a href="javascript:;">安踏 篮球系列 汤普森低帮训练篮球鞋-11731380</a></li>
+		    </ul>
+		</div>
+		<div class="detail-ctr">
+		    <div id="bigView">
+		    <!-- 放大之后的大图 -->
+		        <img width="800" height="800" src="">
+		    </div>
+		    <div class="dtl-info">
+		        <div class="preview">
+		            <div class="smallImg">
+		                <div class="scrollbutton smallImgUp disabled"></div>
+		                <div id="imageMenu">
+		                <!-- 右侧列表显示 -->
+		                    <ul data-col="">
+		                    </ul>
+		                </div>
+		                <div class="scrollbutton smallImgDown disabled"></div>
+		            </div>
+		            <div id="vertical" class="bigImg">
+		            <!-- 中间显示的大图(可放大) -->
+		                <img id="midimg" width="600" height="600" style="margin-top: 0px;" class="loading" src="">
+		                <i class="znq-icon"></i>
+		                <div style="left: 317.5px; top: 0px; display: none;" id="winSelector"></div>
+		            </div>
+		            <div id="share" class="share">
+		                <span> 分享 <i></i>
+		                        </span>
+		                <a id="favPro" class="favPro" href="javascript:;" title="收藏该商品"> 收藏商品 + </a>
+		            </div>
+		        </div>
+		        <div class="pro-info-dtl">
+		            <div class="pro-detail-hd">
+		                <h1>
+		                    <span class="fl"></span><span class="exp-style">款号：<span id="sn"></span></span>
+		                 </h1>
+		                <a href="javascript:;" class="start-comment"> <span class="reviews-summary"> <span class="review-rating review-rating-stars"> <span style="width: 98%;"></span>
+		                            </span>
+		                        </span> <span class="review-count">(4.9)</span>
+		                        </a>
+		            </div>
+		            <div class="pro-sales-list">
+		                <p class="pro-sales-item">
+		                    <b class="c-red">￥</b><b class="current_price c-red"></b>
+		                </p>
+		                <p class="pro-sales-item">吊牌价：399.00 &nbsp;&nbsp;折扣：92% (折让:￥30)</p>
+		            </div>
+		            <div class="pro-alert">
+		                <a href="http://www.anta.cn/sportsmeet.shtml" style="display:block;">
+		                    <p>满549送汤普森冠军“三分”T恤
+		                        <br>满339送束口袋 再返20元红包券
+		                        <br>该商品一件包邮
+		                        <br>订单满399送多功能折叠包
+		                        <br>
+		                    </p>
+		                </a>
+		            </div>
+		            <div id="selectbox" class="selectbox">
+		                <div class="selectip">
+		                    请选择商品信息<i></i>
+		                </div>
+		                <div class="colorbox pro-key">
+		                    <p id="colorname">颜色：<span></span></p>
+		                    <ul id="proColor">
+		                    </ul>
+		                    <div class="clear"></div>
+		                </div>
+		                <div id="color-size" class="sizebox pro-key">
+		                    <p>
+		                        <span class="fl" id="sizename" style="width:120px;">尺码：</span>
+		                        <span class="fl" id="j-kc">库存：</span>
+		                        <a class="help-size" href="###" target="_blank"> 
+		                                    查看尺码对照表 &gt;&gt;
+		                                </a>
+		                    </p>
+		                    <ul data-col="11731380-5" style="display:block;">
+		                        <li class="color_sku js39 "><a>39</a></li>
+		                        <li class="color_sku js39 "><a>40</a></li>
+		                        <li class="color_sku js39 "><a>40.5</a></li>
+		                        <li class="color_sku js39 "><a>41</a></li>
+		                        <li class="color_sku js39 "><a>42</a></li>
+		                        <li class="color_sku js39 "><a>42.5</a></li>
+		                        <li class="color_sku js39 "><a>43</a></li>
+		                        <li class="color_sku js39 "><a>43.5</a></li>
+		                    </ul>
+		                </div>
+		                <div class="sumbox">
+		                    <div class="amount-box">
+		                        <a href="javascript:;" id="num"> <span>数量：</span> <span class="pro-num">1</span>
+		                                </a>
+		                        <ul>
+		                            <li>1</li>
+		                            <li>2</li>
+		                            <li>3</li>
+		                            <li>4</li>
+		                            <li>5</li>
+		                            <li>6</li>
+		                            <li>7</li>
+		                            <li>8</li>
+		                        </ul>
+		                    </div>
+		                    <div class="buttonbox">
+		                        <input id="tj_addcart" class="dtl-cart" type="button" rel="addcart" value="加入购物车">
+		                        <input id="tj_buy" style="background-color: #d00;" type="button" rel="buy" value="立即购买">
+		                    </div>
+		                </div>
+		            </div>
+		            <div class="pro-intro">
+		                <h3>商品说明 :</h3>
+		                <h4></h4>
+		                <p>
+		                    系列：篮球系列
+		                    <br> 底料：成型EVA/橡胶 面料：合成革/织物
+		                </p>
+		            </div>
+		        </div>
+		    </div>
+		</div>
+	</div>
+	<div class="footer">
+		<script type="text/javascript">
+			$('.footer').load('common/footer.html');
+		</script>
+	</div>
+</body>
+</html>

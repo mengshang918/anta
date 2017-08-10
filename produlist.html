@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style/css/produlist.css">
+	<script type="text/javascript" src='js/produlist.js'></script>
+	<script type="text/javascript" src="js/header_footer.js"></script>
+	<script type="text/javascript" src="js/template.js"></script>
+	<script type="text/javascript" src="js/cookie.js"></script>
+</head>
+<body>
+	<div class="header">
+		<script type="text/javascript">
+			$('.header').load('common/header.php');
+		</script>
+	</div>
+	<div class="right-sidebar">
+	<script type="text/javascript">
+		$('.right-sidebar').load('common/right_sidebar.html');
+	</script>
+	</div>
+	<div class="main clearfix">
+		<div class="produ_title">
+			<div>
+				<ul>
+					<li><a href="###">首页</a><i></i></li>
+					<li><a href="###">所有分类</a><i></i></li>
+				</ul>
+			</div>
+		</div>
+		<div class="selector_box">
+		    <div class="selector_info">
+		        <h3>
+		            <em>商品筛选</em> <b> </b>
+		        </h3>
+		        <span style="float:right;">搜索到<b>923</b>件商品</span>
+		    </div>
+		    <dl class="selector_line">
+		        <dt>品牌</dt>
+		        <dd class="values">
+		            <ul>
+		                <li data="k2"><a href="/list/k2" class="ckd" id="k2"><i></i>安踏</a></li>
+		                <li data="k4"><a href="/list/k4" class="ckd" id="k4"><i></i>安踏儿童</a></li>
+		            </ul>
+		            <div class="sl_btns">
+		                <a href="javascript:;" class="disabled sure-ckd">确定</a> <a href="javascript:;" class="cancel-ckd">取消</a>
+		            </div>
+		        </dd>
+		    </dl>
+		    <dl class="selector_line">
+		        <dt>大类</dt>
+		        <dd class="values">
+		            <ul>
+		                <li data="e1"><a href="/list/e1" class="ckd" id="e1"><i></i>鞋类</a></li>
+		                <li data="e2"><a href="/list/e2" class="ckd" id="e2"><i></i>服装</a></li>
+		                <li data="e3"><a href="/list/e3" class="ckd" id="e3"><i></i>配件</a></li>
+		            </ul>
+		            <div class="sl_btns">
+		                <a href="javascript:;" class="disabled sure-ckd">确定</a> <a href="javascript:;" class="cancel-ckd">取消</a>
+		            </div>
+		        </dd>
+		    </dl>
+		    <dl class="selector_line">
+		        <dt>类别</dt>
+		        <dd class="values">
+		            <ul>
+		                <li data="f2"><a href="/list/f2" class="ckd" id="f2"><i></i>跑鞋</a></li>
+		                <li data="f1"><a href="/list/f1" class="ckd" id="f1"><i></i>篮球鞋</a></li>
+		                <li data="f3"><a href="/list/f3" class="ckd" id="f3"><i></i>休闲鞋</a></li>
+		                <li data="f4"><a href="/list/f4" class="ckd" id="f4"><i></i>板鞋</a></li>
+		                <li data="f5"><a href="/list/f5" class="ckd" id="f5"><i></i>综训鞋</a></li>
+		                <li data="f33"><a href="/list/f33" class="ckd" id="f33"><i></i>足球鞋</a></li>
+		                <li data="f6"><a href="/list/f6" class="ckd" id="f6"><i></i>户外鞋</a></li>
+		                <li data="f10"><a href="/list/f10" class="ckd" id="f10"><i></i>针织外套</a></li>
+		                <li data="f19"><a href="/list/f19" class="ckd" id="f19"><i></i>梭织外套</a></li>
+		                <li data="f11"><a href="/list/f11" class="ckd" id="f11"><i></i>套头卫衣</a></li>
+		                <li data="f9"><a href="/list/f9" class="ckd" id="f9"><i></i>针织长裤</a></li>
+		                <li data="f12"><a href="/list/f12" class="ckd" id="f12"><i></i>梭织长裤</a></li>
+		                <li data="f17"><a href="/list/f17" class="ckd" id="f17"><i></i>长袖T恤</a></li>
+		                <li data="f7"><a href="/list/f7" class="ckd" id="f7"><i></i>针织运动套</a></li>
+		                <li data="f36"><a href="/list/f36" class="ckd" id="f36"><i></i>运动背心</a></li>
+		                <li data="f15"><a href="/list/f15" class="ckd" id="f15"><i></i>篮球比赛服</a></li>
+		                <li data="f34"><a href="/list/f34" class="ckd" id="f34"><i></i>足球比赛服</a></li>
+		                <li data="f8"><a href="/list/f8" class="ckd" id="f8"><i></i>羽绒服</a></li>
+		                <li data="f37"><a href="/list/f37" class="ckd" id="f37"><i></i>七分裤</a></li>
+		                <li data="f39"><a href="/list/f39" class="ckd" id="f39"><i></i>五分裤</a></li>
+		                <li data="f22"><a href="/list/f22" class="ckd" id="f22"><i></i>运动短裤</a></li>
+		                <li data="f35"><a href="/list/f35" class="ckd" id="f35"><i></i>短袖T恤</a></li>
+		                <li data="f38"><a href="/list/f38" class="ckd" id="f38"><i></i>POLO衫</a></li>
+		                <li data="f25"><a href="/list/f25" class="ckd" id="f25"><i></i>加大码鞋</a></li>
+		                <li data="f29"><a href="/list/f29" class="ckd" id="f29"><i></i>包类</a></li>
+		                <li data="f28"><a href="/list/f28" class="ckd" id="f28"><i></i>运动袜</a></li>
+		                <li data="f30"><a href="/list/f30" class="ckd" id="f30"><i></i>运动内裤</a></li>
+		                <li data="f31"><a href="/list/f31" class="ckd" id="f31"><i></i>篮球·足球</a></li>
+		                <li data="f27"><a href="/list/f27" class="ckd" id="f27"><i></i>帆布鞋</a></li>
+		                <li data="f21"><a href="/list/f21" class="ckd" id="f21"><i></i>帽子</a></li>
+		                <li data="f32"><a href="/list/f32" class="ckd" id="f32"><i></i>拖鞋·凉鞋</a></li>
+		                <li data="f42"><a href="/list/f42" class="ckd" id="f42"><i></i></a></li>
+		            </ul>
+		            <div class="sl_btns">
+		                <a href="javascript:;" class="disabled sure-ckd">确定</a> <a href="javascript:;" class="cancel-ckd">取消</a>
+		            </div>
+		        </dd>
+		        <dd class="list_operation">
+		            <a href="javascript:;" class="more">更多<i></i></a> <a href="javascript:;" class="options"><i></i>多选</a>
+		        </dd>
+		    </dl>
+		    <dl class="selector_line">
+		        <dt>性别</dt>
+		        <dd class="values">
+		            <ul>
+		                <li data="j1"><a href="/list/j1" class="ckd" id="j1"><i></i>男</a></li>
+		                <li data="j2"><a href="/list/j2" class="ckd" id="j2"><i></i>女</a></li>
+		                <li data="j3"><a href="/list/j3" class="ckd" id="j3"><i></i>中性</a></li>
+		            </ul>
+		            <div class="sl_btns">
+		                <a href="javascript:;" class="disabled sure-ckd">确定</a> <a href="javascript:;" class="cancel-ckd">取消</a>
+		            </div>
+		        </dd>
+		    </dl>
+		    <dl class="selector_line">
+		        <dt>系列</dt>
+		        <dd class="values">
+		            <ul>
+		                <li data="g6"><a href="/list/g6" class="ckd" id="g6"><i></i>跑步系列</a></li>
+		                <li data="g2"><a href="/list/g2" class="ckd" id="g2"><i></i>篮球系列</a></li>
+		                <li data="g9"><a href="/list/g9" class="ckd" id="g9"><i></i>生活系列</a></li>
+		                <li data="g8"><a href="/list/g8" class="ckd" id="g8"><i></i>综训系列</a></li>
+		                <li data="g3"><a href="/list/g3" class="ckd" id="g3"><i></i>足球系列</a></li>
+		                <li data="g7"><a href="/list/g7" class="ckd" id="g7"><i></i>户外系列</a></li>
+		                <li data="g4"><a href="/list/g4" class="ckd" id="g4"><i></i>网球系列</a></li>
+		                <li data="g25"><a href="/list/g25" class="ckd" id="g25"><i></i>时尚系列</a></li>
+		            </ul>
+		            <div class="sl_btns">
+		                <a href="javascript:;" class="disabled sure-ckd">确定</a> <a href="javascript:;" class="cancel-ckd">取消</a>
+		            </div>
+		        </dd>
+		    </dl>
+		    <dl class="selector_line">
+		        <dt>季节</dt>
+		        <dd class="values">
+		            <ul>
+		                <li data="m1"><a href="/list/m1" class="ckd" id="m1"><i></i>冬季</a></li>
+		                <li data="m4"><a href="/list/m4" class="ckd" id="m4"><i></i>秋季</a></li>
+		                <li data="m2"><a href="/list/m2" class="ckd" id="m2"><i></i>夏季</a></li>
+		                <li data="m3"><a href="/list/m3" class="ckd" id="m3"><i></i>春季</a></li>
+		            </ul>
+		            <div class="sl_btns">
+		                <a href="javascript:;" class="disabled sure-ckd">确定</a> <a href="javascript:;" class="cancel-ckd">取消</a>
+		            </div>
+		        </dd>
+		    </dl>
+		    <dl class="selector_line">
+		        <dt>尺码</dt>
+		        <dd class="values">
+		            <ul>
+		                <li data="c13"><a href="/list/c13" class="ckd" id="c13"><i></i>35</a></li>
+		                <li data="c47"><a href="/list/c47" class="ckd" id="c47"><i></i>35.5</a></li>
+		                <li data="c14"><a href="/list/c14" class="ckd" id="c14"><i></i>36</a></li>
+		                <li data="c48"><a href="/list/c48" class="ckd" id="c48"><i></i>36.5</a></li>
+		                <li data="c15"><a href="/list/c15" class="ckd" id="c15"><i></i>37</a></li>
+		                <li data="c49"><a href="/list/c49" class="ckd" id="c49"><i></i>37.5</a></li>
+		                <li data="c16"><a href="/list/c16" class="ckd" id="c16"><i></i>38</a></li>
+		                <li data="c50"><a href="/list/c50" class="ckd" id="c50"><i></i>38.5</a></li>
+		                <li data="c7"><a href="/list/c7" class="ckd" id="c7"><i></i>39</a></li>
+		                <li data="c8"><a href="/list/c8" class="ckd" id="c8"><i></i>40</a></li>
+		                <li data="c52"><a href="/list/c52" class="ckd" id="c52"><i></i>40.5</a></li>
+		                <li data="c9"><a href="/list/c9" class="ckd" id="c9"><i></i>41</a></li>
+		                <li data="c10"><a href="/list/c10" class="ckd" id="c10"><i></i>42</a></li>
+		                <li data="c53"><a href="/list/c53" class="ckd" id="c53"><i></i>42.5</a></li>
+		                <li data="c11"><a href="/list/c11" class="ckd" id="c11"><i></i>43</a></li>
+		                <li data="c51"><a href="/list/c51" class="ckd" id="c51"><i></i>44.5</a></li>
+		                <li data="c17"><a href="/list/c17" class="ckd" id="c17"><i></i>45</a></li>
+		                <li data="c65"><a href="/list/c65" class="ckd" id="c65"><i></i>45.5</a></li>
+		                <li data="c18"><a href="/list/c18" class="ckd" id="c18"><i></i>46</a></li>
+		                <li data="c29"><a href="/list/c29" class="ckd" id="c29"><i></i>XS</a></li>
+		                <li data="c5"><a href="/list/c5" class="ckd" id="c5"><i></i>S</a></li>
+		                <li data="c4"><a href="/list/c4" class="ckd" id="c4"><i></i>M</a></li>
+		                <li data="c3"><a href="/list/c3" class="ckd" id="c3"><i></i>L</a></li>
+		                <li data="c6"><a href="/list/c6" class="ckd" id="c6"><i></i>XL</a></li>
+		                <li data="c1"><a href="/list/c1" class="ckd" id="c1"><i></i>2XL</a></li>
+		                <li data="c2"><a href="/list/c2" class="ckd" id="c2"><i></i>3XL</a></li>
+		                <li data="c19"><a href="/list/c19" class="ckd" id="c19"><i></i>4XL</a></li>
+		                <li data="c30"><a href="/list/c30" class="ckd" id="c30"><i></i>101</a></li>
+		                <li data="c31"><a href="/list/c31" class="ckd" id="c31"><i></i>110</a></li>
+		                <li data="c32"><a href="/list/c32" class="ckd" id="c32"><i></i>120</a></li>
+		                <li data="c24"><a href="/list/c24" class="ckd" id="c24"><i></i>130</a></li>
+		                <li data="c25"><a href="/list/c25" class="ckd" id="c25"><i></i>140</a></li>
+		                <li data="c26"><a href="/list/c26" class="ckd" id="c26"><i></i>150</a></li>
+		                <li data="c27"><a href="/list/c27" class="ckd" id="c27"><i></i>160</a></li>
+		                <li data="c46"><a href="/list/c46" class="ckd" id="c46"><i></i>165</a></li>
+		                <li data="c28"><a href="/list/c28" class="ckd" id="c28"><i></i>170</a></li>
+		                <li data="c43"><a href="/list/c43" class="ckd" id="c43"><i></i>26</a></li>
+		                <li data="c40"><a href="/list/c40" class="ckd" id="c40"><i></i>28</a></li>
+		                <li data="c41"><a href="/list/c41" class="ckd" id="c41"><i></i>29</a></li>
+		                <li data="c42"><a href="/list/c42" class="ckd" id="c42"><i></i>30</a></li>
+		                <li data="c22"><a href="/list/c22" class="ckd" id="c22"><i></i>31</a></li>
+		                <li data="c23"><a href="/list/c23" class="ckd" id="c23"><i></i>32</a></li>
+		                <li data="c20"><a href="/list/c20" class="ckd" id="c20"><i></i>33</a></li>
+		                <li data="c21"><a href="/list/c21" class="ckd" id="c21"><i></i>34</a></li>
+		            </ul>
+		            <div class="sl_btns">
+		                <a href="javascript:;" class="disabled sure-ckd">确定</a> <a href="javascript:;" class="cancel-ckd">取消</a>
+		            </div>
+		        </dd>
+		        <dd class="list_operation">
+		            <a href="javascript:;" class="more">更多<i></i></a> <a href="javascript:;" class="options"><i></i>多选</a>
+		        </dd>
+		    </dl>
+		    <dl class="selector_line">
+		        <dt>科技</dt>
+		        <dd class="values">
+		            <ul>
+		                <li data="h4"><a href="/list/h4" class="ckd" id="h4"><i></i>吸湿·速干</a></li>
+		                <li data="h21"><a href="/list/h21" class="ckd" id="h21"><i></i>冰肤科技</a></li>
+		                <li data="h20"><a href="/list/h20" class="ckd" id="h20"><i></i>五驱掌控</a></li>
+		                <li data="h27"><a href="/list/h27" class="ckd" id="h27"><i></i>菱极缓震</a></li>
+		                <li data="h17"><a href="/list/h17" class="ckd" id="h17"><i></i>双承缓震</a></li>
+		                <li data="h30"><a href="/list/h30" class="ckd" id="h30"><i></i>厚底缓承</a></li>
+		                <li data="h13"><a href="/list/h13" class="ckd" id="h13"><i></i>缓震弹力胶</a></li>
+		                <li data="h3"><a href="/list/h3" class="ckd" id="h3"><i></i>气垫科技</a></li>
+		                <li data="h2"><a href="/list/h2" class="ckd" id="h2"><i></i>透气呼吸网</a></li>
+		                <li data="h1"><a href="/list/h1" class="ckd" id="h1"><i></i>缓震能量环</a></li>
+		                <li data="h18"><a href="/list/h18" class="ckd" id="h18"><i></i>易弯折科技</a></li>
+		                <li data="h6"><a href="/list/h6" class="ckd" id="h6"><i></i>中底稳定支撑</a></li>
+		                <li data="h5"><a href="/list/h5" class="ckd" id="h5"><i></i>缓震芯科技</a></li>
+		                <li data="h8"><a href="/list/h8" class="ckd" id="h8"><i></i>适足科技</a></li>
+		                <li data="h19"><a href="/list/h19" class="ckd" id="h19"><i></i>耐磨橡胶</a></li>
+		                <li data="h11"><a href="/list/h11" class="ckd" id="h11"><i></i>灵爪防滑</a></li>
+		                <li data="h31"><a href="/list/h31" class="ckd" id="h31"><i></i>极钉科技</a></li>
+		                <li data="h33"><a href="/list/h33" class="ckd" id="h33"><i></i>菱足科技</a></li>
+		                <li data="h9"><a href="/list/h9" class="ckd" id="h9"><i></i>抗菌</a></li>
+		                <li data="h25"><a href="/list/h25" class="ckd" id="h25"><i></i>无缝一体织造</a></li>
+		                <li data="h15"><a href="/list/h15" class="ckd" id="h15"><i></i>抗皱动型科技</a></li>
+		                <li data="h14"><a href="/list/h14" class="ckd" id="h14"><i></i>防泼水</a></li>
+		            </ul>
+		            <div class="sl_btns">
+		                <a href="javascript:;" class="disabled sure-ckd">确定</a> <a href="javascript:;" class="cancel-ckd">取消</a>
+		            </div>
+		        </dd>
+		        <dd class="list_operation">
+		            <a href="javascript:;" class="more">更多<i></i></a> <a href="javascript:;" class="options"><i></i>多选</a>
+		        </dd>
+		    </dl>
+		    <dl class="selector_line">
+		        <dt>版型</dt>
+		        <dd class="values">
+		            <ul>
+		                <li data="i1"><a href="/list/i1" class="ckd" id="i1"><i></i>适脚鞋型</a></li>
+		                <li data="i2"><a href="/list/i2" class="ckd" id="i2"><i></i>宽松鞋型</a></li>
+		                <li data="i3"><a href="/list/i3" class="ckd" id="i3"><i></i>修长鞋型</a></li>
+		                <li data="i4"><a href="/list/i4" class="ckd" id="i4"><i></i>常规版型</a></li>
+		                <li data="i6"><a href="/list/i6" class="ckd" id="i6"><i></i>宽松版型</a></li>
+		                <li data="i5"><a href="/list/i5" class="ckd" id="i5"><i></i>修身版型</a></li>
+		                <li data="i7"><a href="/list/i7" class="ckd" id="i7"><i></i>紧身版型</a></li>
+		            </ul>
+		            <div class="sl_btns">
+		                <a href="javascript:;" class="disabled sure-ckd">确定</a> <a href="javascript:;" class="cancel-ckd">取消</a>
+		            </div>
+		        </dd>
+		        <dd class="list_operation">
+		            <a href="javascript:;" class="options"><i></i>多选</a>
+		        </dd>
+		    </dl>
+		    <!--    <div class="selector_more">
+		                <span>更多<i></i></span>
+		            </div> -->
+		</div>
+		<div class="filter_list">
+		    <div class="list_sort fl">
+		        <input id="jorder" name="order" value="" type="hidden">
+		        <a onclick="orderby(0);" class="current" href="javascript:;">综合排序</a> <a onclick="orderby(4);" class="" href="javascript:;">销售</a> <a onclick="orderby(5);" class="" href="javascript:;">价格</a> </div>
+		    <div class="list_activity fl">
+		        <a>
+		            <label>
+		                <input type="checkbox" disabled="disabled"><span style="text-decoration: line-through;">送券</span></label>
+		        </a>
+		        <a>
+		            <label>
+		                <input type="checkbox" disabled="disabled"><span style="text-decoration: line-through;">赠品</span></label>
+		        </a>
+		        <a>
+		            <label>
+		                <input type="checkbox" disabled="disabled"><span style="text-decoration: line-through;">免邮</span></label>
+		        </a>
+		        <a>
+		            <label>
+		                <input type="checkbox" disabled="disabled"><span style="text-decoration: line-through;">搭配</span></label>
+		        </a>
+		        <a>
+		            <label>
+		                <input type="checkbox" disabled="disabled"><span style="text-decoration: line-through;">领券</span></label>
+		        </a>
+		        <a>
+		            <label>
+		                <input type="checkbox" disabled="disabled"><span style="text-decoration: line-through;">减价</span></label>
+		        </a>
+		    </div>
+		    <div class="list_search fl">
+		        <input type="hidden" class="fl" name="k" value="">
+		        <input type="text" class="fl" name="keywords" placeholder="在结果中搜索" value="" style="width: 100px"> <a onclick="onKeywords();" class="fl" href="javascript:;">确认</a>
+		    </div>
+		    <div class="filter_page fr">
+		        <span><b>1</b> / <em>5</em></span>
+		        <a class="page_n " onclick="onPrvpage();" href="javascript:;"></a>
+		        <a class="page_p" onclick="onNextpage();" href="javascript:;"></a>
+		        <!--    disabled -->
+		    </div>
+		</div>
+		<div class="list_pro_box">
+			<ul class="pro_list">
+				<script id="produlist" type="text/html">
+					{{each goods as value}}
+						<li class="pro_item" targer_id="{{value["goods-id"]}}">
+				        <div class="pro_info">
+				            <a class="pro_like" name="{{value["goods-id"]}}"><i></i>关注</a>
+				            <a target="_blank" href="details.html?id={{value["goods-id"]}}" class="pro_img" data=""> 
+				                  <img id="{{value["goods-id"]}}" src="{{value["goods-cur"]}}">
+				                  <i class="znq-icon"></i>
+				            </a>
+				            <div class="current pro_scroll">
+				                <span class="pro_prev scroll_page">&lt;</span> <span class="pro_next scroll_page">&gt;</span>
+				                <div class="pro_wrap current">
+				                    <ul style="margin-left: 0px;">
+				                    	{{each value['goods-classes'] as val}}
+				                        <li><a target="_blank" href="details.html?id={{val['data-col']}}" class="current"><img targer_id="{{value["goods-id"]}}" class="colorimg loading" style="display: inline;" src="{{val["src"]}}" data-col="{{val['data-col']}}"></a></li>
+				                    	{{/each}}
+				                    </ul>
+				                </div>
+				            </div>
+				            <div class="pro_price">
+				                <span>￥<b>{{value['goods-price']}}</b></span>
+				                <div class="pro_mark">
+				                    <span></span> </div>
+				            </div>
+				            <p class="pro_title"><a target="_blank" href="">{{value['goods-name']}}</a></p>
+				        </div>
+				    </li>
+					{{/each}}
+				</script>
+			</ul>
+		</div>
+	</div>
+	<div class="footer">
+		<script type="text/javascript">
+			$('.footer').load('common/footer.html');
+		</script>
+	</div>
+</body>
+</html>

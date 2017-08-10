@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>安踏官方商城-注册</title>
+	<link rel="stylesheet" type="text/css" href="style/css/regist.css">
+	<link rel="stylesheet" type="text/css" href="style/css/reg2.css">
+</head>
+<body>
+	<div class="regist-t">
+		<div class="juzhong">
+			<h2>安踏帐号注册安全验证</h2>
+			<h3>为了保护帐号安全，需要验证手机有效性</h3>
+			点击发送短信按钮，将会发送一条有验证码的短信至手机 <span class="colorphone">176***7247</span><br/>
+			<a href="javascript:" id="sendmessage">发送短信</a>
+			<a href="###" class="check-yanzhen">换其他验证方式</a>
+		</div>
+	</div>
+	<div class="footer">
+		Copyright 2012-2015 XIAMEN ANTA E-COMMERCE LIMITED All Rights Reserved<br/>
+厦门安踏电子商务有限公司 闽ICP备11020421号<br/>
+福建省厦门市思明区观音山嘉义路99号安踏营运中心 电话：400-858-2020<br/>
+<p><a href="###"><img src="images/login_regist/chengxing.png" alt=""></a>
+<a href="###"><img src="images/login_regist/yinlian.png" alt=""></a>
+<a href="###"><img src="images/login_regist/chengxin.png" alt=""></a>
+<a href="###"><img src="images/login_regist/police.png" alt=""></a></p>
+	</div>
+	<div class="right-menu">
+		<a href="###" class="online-kefu"></a>
+		<a href="###" class="phone-kefu"><div>400-858-2020</div></a>
+	</div>
+	<script type="text/javascript">
+	window.onload = function(){
+		var a = document.getElementById('sendmessage');
+		a.onclick = function(){
+			var str = location.search;
+			a.href = 'reg_password.html'+str;
+		}
+	}
+	</script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>安踏官方商城-注册</title>
+	<link rel="stylesheet" type="text/css" href="style/css/regist.css">
+</head>
+<body>
+	<div class="regist-t">
+		<div class="juzhong">
+			<p><img src="images/login_regist/logo.png"></p>
+			<p>请输入手机号码：</p>
+			<form action="reg.php" method="post">
+				<p><input type="text" placeholder="手机号码" name="username"></p>
+				<p>
+					<input type="text" placeholder="图片验证码" class="short-inp">
+					<span class="yanzhenma"></span>
+				</p>
+				<p style="display:none;color: red;font-size: 16px;" id="tips"></p>
+				<input type="submit" name="" id="submit" value="确认">
+			</form>
+		</div>
+	</div>
+	<div class="footer">
+		Copyright 2012-2015 XIAMEN ANTA E-COMMERCE LIMITED All Rights Reserved<br/>
+厦门安踏电子商务有限公司 闽ICP备11020421号<br/>
+福建省厦门市思明区观音山嘉义路99号安踏营运中心 电话：400-858-2020<br/>
+<p><a href="###"><img src="images/login_regist/chengxing.png" alt=""></a>
+<a href="###"><img src="images/login_regist/yinlian.png" alt=""></a>
+<a href="###"><img src="images/login_regist/chengxin.png" alt=""></a>
+<a href="###"><img src="images/login_regist/police.png" alt=""></a></p>
+	</div>
+	<div class="right-menu">
+		<a href="###" class="online-kefu"></a>
+		<a href="###" class="phone-kefu"><div>400-858-2020</div></a>
+	</div>
+	<script type="text/javascript">
+		// 邮箱验证
+		window.onload = function(){
+			var inp = document.getElementsByTagName('input');
+			var submit = document.getElementById('submit');
+			var tips = document.getElementById('tips');
+			var div  = document.getElementsByClassName('juzhong')[0];
+			var form = document.getElementsByTagName('form')[0];
+			// console.log(form);
+			var flag = true;
+			form.onsubmit = function(){
+				// var pattern = /^[A-Za-z\d]+([-_.][A-Za-z\d]+)*@([A-Za-z\d]+[-.])+[A-Za-z\d]{2,4}$/;
+				var pattern1 = /^(((13[0-9])|(15[0-9])|(18[0-9]))+\d{8})$/;
+				flag = pattern1.test(inp[0].value);
+				if(flag){
+					location.href="reg.php";
+					tips.style.display = 'none';
+				}else{
+					tips.style.display = 'block';
+					tips.innerHTML = '手机号格式不正确';
+					inp[0].value="";
+					return false;
+				}
+			}
+			var str = location.search;
+			if(str.split('=')[1]=='false'){
+				tips.style.display = 'block';
+				tips.innerHTML = '手机号已存在';
+				inp[0].value="";
+			}
+		}
+		
+	</script>
+</body>
+</html>
